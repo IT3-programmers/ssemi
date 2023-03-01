@@ -142,7 +142,97 @@ body {
 }
 
 /* tady */
+body{
+background: linear-gradient(#FFFFFF 80%, #67beed);
+}
+.primary-header { 
+    background-color: #FFFFFF;
+}
 
+
+.nav-responsivebutton {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.nav-responsivebutton-open::before {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: var(--clr-primary-400);
+    transition: 0.4s all ease;
+    transform: translateY(-6px);
+}
+
+.nav-responsivebutton-open::after {
+    content: '';
+    display: block;
+    width: 29px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    background-color: var(--clr-primary-400);
+    transition: 0.4s all ease;
+    transform: translateY(6px);
+}
+
+.nav-responsivebutton[aria-expanded="true"] .nav-responsivebutton-open::before {
+    width: 32px;
+    transform: rotate(45deg) translate(0px, 0px);
+}
+
+.nav-responsivebutton[aria-expanded="true"] .nav-responsive__button-open::after {
+    width: 32px;
+    transform: rotate(-45deg) translate(1px, -2px);
+    right: 0;
+}.nav-responsivebutton {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.nav-responsivebutton-open::before {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: var(--clr-primary-400);
+    transition: 0.4s all ease;
+    transform: translateY(-6px);
+}
+
+.nav-responsivebutton-open::after {
+    content: '';
+    display: block;
+    width: 29px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    background-color: var(--clr-primary-400);
+    transition: 0.4s all ease;
+    transform: translateY(6px);
+}
+
+.nav-responsivebutton[aria-expanded="true"] .nav-responsivebutton-open::before {
+    width: 32px;
+    transform: rotate(45deg) translate(0px, 0px);
+}
+
+.nav-responsivebutton[aria-expanded="true"] .nav-responsive__button-open::after {
+    width: 32px;
+    transform: rotate(-45deg) translate(1px, -2px);
+    right: 0;
+}
 /* Utility classes */
 .visually-hidden {
     position: absolute;
