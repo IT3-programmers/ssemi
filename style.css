@@ -728,4 +728,4 @@ background: linear-gradient(#FFFFFF 80%, #67beed );
 .fs-secondary-heading { 
     font-size: var(--fs-secondary-heading); 
     line-height: 1.2;
-}-900 { padding-right: var(--size-900); }
+}
